@@ -76,6 +76,7 @@ else
 fi
 
 echo "Using python version string $PYTHON"
+eval "$(conda shell.zsh hook)"
 
 # Setup a new conda env using the existing python
 if conda activate $ENV_DIR && [ ${force} -eq 0 ]
